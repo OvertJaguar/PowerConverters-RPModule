@@ -22,12 +22,12 @@ import cpw.mods.fml.common.network.NetworkMod;
 import cpw.mods.fml.common.registry.GameRegistry;
 import cpw.mods.fml.common.registry.LanguageRegistry;
 
-@Mod(modid = "PowerConverters-RPModule", name = "PC: RP Module", version = RPModule.modVersion, dependencies = "required-before:PowerConverters")
+@Mod(modid = RPModule.modID, name = RPModule.modName, version = RPModule.modVersion, dependencies = "required-after:PowerConverters;required-after:PowerCrystalsCore")
 @NetworkMod(clientSideRequired = true, serverSideRequired = true)
 public class RPModule
 {
 	public static final String modID = "PCRPModule";
-	public static final String modName = "PowerConverters: RP Module";
+	public static final String modName = "PC: RP Module";
 	public static final String modVersion = "1.4.7R2.1.1";
 
 	public static Block converterBlockRedPower;
